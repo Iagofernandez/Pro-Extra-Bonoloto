@@ -6,6 +6,7 @@
 package pro.extra.bonoloto;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import javax.swing.JOptionPane;
 
 /**
@@ -53,7 +54,7 @@ public class ventanaBonoloto extends javax.swing.JFrame {
 
         jLabel2.setText("Numeros Maquina");
 
-        jLabel3.setText("Aciertos");
+        jLabel3.setText("Premio");
 
         Suerte.setBackground(new java.awt.Color(153, 255, 255));
         Suerte.setForeground(new java.awt.Color(153, 153, 153));
@@ -77,13 +78,13 @@ public class ventanaBonoloto extends javax.swing.JFrame {
                             .addComponent(jLabel3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Aciertos, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
-                            .addComponent(NumeroMaquina)
-                            .addComponent(NumeroJugador)))
+                            .addComponent(NumeroMaquina, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
+                            .addComponent(NumeroJugador)
+                            .addComponent(Aciertos)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(Suerte)))
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,25 +125,39 @@ public class ventanaBonoloto extends javax.swing.JFrame {
     private void SuerteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuerteActionPerformed
         
         int num1 = 0, num2=0, num3=0, num4=0, num5=0, num6=0;
-         num1=Integer.parseInt(JOptionPane.showInputDialog("numero 1"));
-        num2=Integer.parseInt(JOptionPane.showInputDialog("numero 2"));
-        num3=Integer.parseInt(JOptionPane.showInputDialog("numero 3"));
-        num4=Integer.parseInt(JOptionPane.showInputDialog("numero 4"));
-        num5=Integer.parseInt(JOptionPane.showInputDialog("numero 5"));
-        num6=Integer.parseInt(JOptionPane.showInputDialog("numero 6"));
+         num1=Integer.parseInt(JOptionPane.showInputDialog("Cual número es el primero?"));
+        num2=Integer.parseInt(JOptionPane.showInputDialog("Cual número es el segundo?"));
+        num3=Integer.parseInt(JOptionPane.showInputDialog("Cual número es el tercero?"));
+        num4=Integer.parseInt(JOptionPane.showInputDialog("Cual número será el cuarto"));
+        num5=Integer.parseInt(JOptionPane.showInputDialog("Cual número será el quinto?"));
+        num6=Integer.parseInt(JOptionPane.showInputDialog("Cual número será el sexto?"));
         
-        if(num1<49||num1>0){
-            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+        if(num1==num2||num1==num3||num1==num4||num1==num5||num1==num6){
+            JOptionPane.showMessageDialog(null, "No repitas valores tontolculo");
+            
+        }else if(num2==num1||num2==num3||num2==num4||num2==num5||num2==num6){
+            JOptionPane.showMessageDialog(null, "No repitas valores tontolculo");
+        }else if(num3==num1||num3==num2||num3==num4||num3==num5||num3==num6){
+            JOptionPane.showMessageDialog(null, "No repitas valores tontolculo");
+             }else if(num4==num1||num4==num2||num4==num3||num4==num5||num4==num6){
+            JOptionPane.showMessageDialog(null, "No repitas valores tontolculo");
+            }else if(num5==num1||num5==num2||num5==num3||num5==num4||num5==num6){
+            JOptionPane.showMessageDialog(null, "No repitas valores tontolculo");
+             }else if(num6==num1||num6==num2||num6==num3||num6==num4||num6==num5){
+            JOptionPane.showMessageDialog(null, "No repitas valores tontolculo");
+             }
+            if(num1>49||num1<0){
+            JOptionPane.showMessageDialog(null, "No puede el numero 1 superar la cifra 49/ser inferior que 0");
         }else if(num2>49||num2<0){
-            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            JOptionPane.showMessageDialog(null, "No puede el numero 2 superar la cifra 49/ser inferior que 0");
         }else if(num3>49||num3<0){
-            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            JOptionPane.showMessageDialog(null, "No puede el numero 3 superar la cifra 49/ser inferior que 0");
         }else if(num4>49||num4<0){
-            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            JOptionPane.showMessageDialog(null, "No puede el numero 4 superar la cifra 49/ser inferior que 0");
             }else if(num5>49||num5<0){
-            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            JOptionPane.showMessageDialog(null, "No puede el numero 5 superar la cifra 49/ser inferior que 0");
             }else if(num6>49||num6<0){
-            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            JOptionPane.showMessageDialog(null, "No puede el numero 6 superar la cifra 49/ser inferior que 0");
             }else{
         
 
@@ -154,7 +169,7 @@ public class ventanaBonoloto extends javax.swing.JFrame {
         numeroJ.add(num5);
         numeroJ.add(num6);
 
-        NumeroJugador.setText("[" + num1 + " ,"+ num2 + " ," + num3 + " ," + num4 + " ," + num5 + " ," + num6+"]");
+        NumeroJugador.setText("[" + num1 + ", "+ num2 + ", " + num3 + ", " + num4 + ", " + num5 + ", " + num6+"]");
     int numM;
     ArrayList numerosM = new ArrayList<>();
         for(int i=0;i<=5;i++){
@@ -167,8 +182,16 @@ public class ventanaBonoloto extends javax.swing.JFrame {
             }
             for (Object n : numerosM) {
                 NumeroMaquina.setText("" + numerosM);
+                
+                
             }
+           
+            }if(numeroJ==numerosM){
+               Aciertos.setText("Comprate una casa en Gandía, has ganado la loto!!!");
+            }else{
+                Aciertos.setText("Para la próxima el ferrari, sigue intentándolo");
         }
+        
         }
         
     }//GEN-LAST:event_SuerteActionPerformed
