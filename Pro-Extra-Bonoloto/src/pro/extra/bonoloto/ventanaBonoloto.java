@@ -123,14 +123,28 @@ public class ventanaBonoloto extends javax.swing.JFrame {
 
     private void SuerteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuerteActionPerformed
         
-        int num1, num2, num3, num4, num5, num6;
-
-        num1=Integer.parseInt(JOptionPane.showInputDialog("numero 1"));
+        int num1 = 0, num2=0, num3=0, num4=0, num5=0, num6=0;
+         num1=Integer.parseInt(JOptionPane.showInputDialog("numero 1"));
         num2=Integer.parseInt(JOptionPane.showInputDialog("numero 2"));
         num3=Integer.parseInt(JOptionPane.showInputDialog("numero 3"));
         num4=Integer.parseInt(JOptionPane.showInputDialog("numero 4"));
         num5=Integer.parseInt(JOptionPane.showInputDialog("numero 5"));
         num6=Integer.parseInt(JOptionPane.showInputDialog("numero 6"));
+        
+        if(num1<49||num1>0){
+            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+        }else if(num2>49||num2<0){
+            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+        }else if(num3>49||num3<0){
+            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+        }else if(num4>49||num4<0){
+            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            }else if(num5>49||num5<0){
+            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            }else if(num6>49||num6<0){
+            JOptionPane.showMessageDialog(null, "No puede superar la cifra 49/ser inferior que 0");
+            }else{
+        
 
         ArrayList numeroJ = new ArrayList<>();
         numeroJ.add(num1);
@@ -154,6 +168,7 @@ public class ventanaBonoloto extends javax.swing.JFrame {
             for (Object n : numerosM) {
                 NumeroMaquina.setText("" + numerosM);
             }
+        }
         }
         
     }//GEN-LAST:event_SuerteActionPerformed
