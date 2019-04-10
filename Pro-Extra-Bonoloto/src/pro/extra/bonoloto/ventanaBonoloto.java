@@ -33,8 +33,8 @@ public class ventanaBonoloto extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         NumeroJugador = new javax.swing.JTextField();
+        Acierto = new javax.swing.JTextField();
         NumeroMaquina = new javax.swing.JTextField();
-        Aciertos = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -53,9 +53,9 @@ public class ventanaBonoloto extends javax.swing.JFrame {
             }
         });
 
-        NumeroMaquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Acierto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        Aciertos.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        NumeroMaquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel1.setFont(new java.awt.Font("Abyssinica SIL", 1, 12)); // NOI18N
         jLabel1.setText("Números Jugador");
@@ -95,10 +95,10 @@ public class ventanaBonoloto extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(NumeroMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Acierto, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(NumeroJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
-                                .addComponent(Aciertos))))
+                                .addComponent(NumeroMaquina))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(161, 161, 161)
                         .addComponent(jLabel4)))
@@ -107,20 +107,20 @@ public class ventanaBonoloto extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(37, 37, 37)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(NumeroJugador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Aciertos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
+                    .addComponent(jLabel2)
+                    .addComponent(Acierto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NumeroMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(jLabel3)
+                    .addComponent(NumeroMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Suerte)
                 .addContainerGap())
@@ -201,15 +201,15 @@ public class ventanaBonoloto extends javax.swing.JFrame {
                 numerosM.add(numM);
             }
             for (Object n : numerosM) {
-                NumeroMaquina.setText("" + numerosM);
+                Acierto.setText("" + numerosM);
                 
                 
             }
            
             }if(numeroJ==numerosM){
-               Aciertos.setText("Comprate una casa en Gandía, has ganado la loto!!!");
+               NumeroMaquina.setText("Comprate una casa en Gandía, has ganado la loto!!!");
             }else{
-                Aciertos.setText("Para la próxima el ferrari, sigue intentándolo");
+                NumeroMaquina.setText("Para la próxima el ferrari, sigue intentándolo");
         }
         
         }
@@ -260,7 +260,7 @@ public class ventanaBonoloto extends javax.swing.JFrame {
     
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField Aciertos;
+    private javax.swing.JTextField Acierto;
     private javax.swing.JTextField NumeroJugador;
     private javax.swing.JTextField NumeroMaquina;
     private javax.swing.JButton Suerte;
