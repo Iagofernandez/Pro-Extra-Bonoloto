@@ -6,6 +6,7 @@
 package pro.extra.bonoloto;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -33,130 +34,18 @@ public class ventanaBonoloto extends javax.swing.JFrame {
         NumeroJugador = new javax.swing.JTextField();
         NumeroMaquina = new javax.swing.JTextField();
         Aciertos = new javax.swing.JTextField();
-        Boton1 = new javax.swing.JButton();
-        Boton2 = new javax.swing.JButton();
-        Boton3 = new javax.swing.JButton();
-        Boton4 = new javax.swing.JButton();
-        Boton5 = new javax.swing.JButton();
-        Boton6 = new javax.swing.JButton();
-        Boton7 = new javax.swing.JButton();
-        Boton8 = new javax.swing.JButton();
-        Boton9 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        Boton10 = new javax.swing.JButton();
-        Boton11 = new javax.swing.JButton();
-        Boton12 = new javax.swing.JButton();
-        Boton13 = new javax.swing.JButton();
-        Boton14 = new javax.swing.JButton();
-        Boton15 = new javax.swing.JButton();
-        Boton16 = new javax.swing.JButton();
-        Boton17 = new javax.swing.JButton();
-        Boton18 = new javax.swing.JButton();
-        Boton19 = new javax.swing.JButton();
-        Boton22 = new javax.swing.JButton();
-        Boton20 = new javax.swing.JButton();
-        Boton21 = new javax.swing.JButton();
-        Boton23 = new javax.swing.JButton();
-        Boton24 = new javax.swing.JButton();
-        Boton25 = new javax.swing.JButton();
-        Boton26 = new javax.swing.JButton();
-        Boton27 = new javax.swing.JButton();
-        Boton28 = new javax.swing.JButton();
-        Boton29 = new javax.swing.JButton();
-        Boton30 = new javax.swing.JButton();
-        Boton31 = new javax.swing.JButton();
-        Boton32 = new javax.swing.JButton();
-        Boton33 = new javax.swing.JButton();
-        Boton34 = new javax.swing.JButton();
-        Boton35 = new javax.swing.JButton();
-        Boton37 = new javax.swing.JButton();
-        Boton38 = new javax.swing.JButton();
-        Boton39 = new javax.swing.JButton();
-        Boton40 = new javax.swing.JButton();
-        Boton41 = new javax.swing.JButton();
-        Boton42 = new javax.swing.JButton();
-        Boton43 = new javax.swing.JButton();
-        Boton44 = new javax.swing.JButton();
-        Boton45 = new javax.swing.JButton();
-        Boton46 = new javax.swing.JButton();
-        Boton47 = new javax.swing.JButton();
-        Boton48 = new javax.swing.JButton();
-        Boton49 = new javax.swing.JButton();
-        Boton36 = new javax.swing.JButton();
-        BotonMaquina = new javax.swing.JButton();
-        BotonJugador = new javax.swing.JButton();
         Suerte = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setForeground(new java.awt.Color(0, 255, 102));
+
         NumeroJugador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NumeroJugadorActionPerformed(evt);
-            }
-        });
-
-        Boton1.setText("1");
-        Boton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton1ActionPerformed(evt);
-            }
-        });
-
-        Boton2.setText("2");
-        Boton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton2ActionPerformed(evt);
-            }
-        });
-
-        Boton3.setText("3");
-        Boton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton3ActionPerformed(evt);
-            }
-        });
-
-        Boton4.setText("4");
-        Boton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton4ActionPerformed(evt);
-            }
-        });
-
-        Boton5.setText("5");
-        Boton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton5ActionPerformed(evt);
-            }
-        });
-
-        Boton6.setText("6");
-        Boton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton6ActionPerformed(evt);
-            }
-        });
-
-        Boton7.setText("7");
-        Boton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton7ActionPerformed(evt);
-            }
-        });
-
-        Boton8.setText("8");
-        Boton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton8ActionPerformed(evt);
-            }
-        });
-
-        Boton9.setText("9");
-        Boton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton9ActionPerformed(evt);
             }
         });
 
@@ -166,178 +55,19 @@ public class ventanaBonoloto extends javax.swing.JFrame {
 
         jLabel3.setText("Aciertos");
 
-        Boton10.setText("10");
-        Boton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton10ActionPerformed(evt);
-            }
-        });
-
-        Boton11.setText("11");
-        Boton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Boton11ActionPerformed(evt);
-            }
-        });
-
-        Boton12.setText("12");
-
-        Boton13.setText("13");
-
-        Boton14.setText("14");
-
-        Boton15.setText("15");
-        Boton15.setToolTipText("");
-
-        Boton16.setText("16");
-
-        Boton17.setText("17");
-
-        Boton18.setText("18");
-
-        Boton19.setText("19");
-
-        Boton22.setText("22");
-
-        Boton20.setText("20");
-
-        Boton21.setText("21");
-
-        Boton23.setText("23");
-
-        Boton24.setText("24");
-
-        Boton25.setText("25");
-
-        Boton26.setText("26");
-        Boton26.setToolTipText("");
-
-        Boton27.setText("27");
-
-        Boton28.setText("28");
-
-        Boton29.setText("29");
-
-        Boton30.setText("30");
-
-        Boton31.setText("31");
-
-        Boton32.setText("32");
-
-        Boton33.setText("33");
-
-        Boton34.setText("34");
-
-        Boton35.setText("35");
-
-        Boton37.setText("37");
-
-        Boton38.setText("38");
-
-        Boton39.setText("39");
-
-        Boton40.setText("40");
-
-        Boton41.setText("41");
-
-        Boton42.setText("42");
-
-        Boton43.setText("43");
-
-        Boton44.setText("44");
-
-        Boton45.setText("45");
-
-        Boton46.setText("46");
-
-        Boton47.setText("47");
-
-        Boton48.setText("48");
-
-        Boton49.setText("49");
-
-        Boton36.setText("36");
-
-        BotonMaquina.setText("gNumMaquina");
-        BotonMaquina.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonMaquinaActionPerformed(evt);
-            }
-        });
-
-        BotonJugador.setText("gNumJugador");
-        BotonJugador.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonJugadorActionPerformed(evt);
-            }
-        });
-
+        Suerte.setBackground(new java.awt.Color(153, 255, 255));
+        Suerte.setForeground(new java.awt.Color(153, 153, 153));
         Suerte.setText("Suerte!");
+        Suerte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SuerteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Boton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton10)
-                    .addComponent(Boton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Boton12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Boton23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Boton44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton36, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Boton46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Boton45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(179, 179, 179))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -347,15 +77,13 @@ public class ventanaBonoloto extends javax.swing.JFrame {
                             .addComponent(jLabel3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(NumeroJugador, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
+                            .addComponent(Aciertos, javax.swing.GroupLayout.DEFAULT_SIZE, 243, Short.MAX_VALUE)
                             .addComponent(NumeroMaquina)
-                            .addComponent(Aciertos)))
+                            .addComponent(NumeroJugador)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(BotonJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Suerte))
-                    .addComponent(BotonMaquina))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(Suerte)))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -372,91 +100,18 @@ public class ventanaBonoloto extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Aciertos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton1)
-                    .addComponent(Boton12)
-                    .addComponent(Boton23)
-                    .addComponent(Boton34)
-                    .addComponent(Boton45))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton2)
-                    .addComponent(Boton13)
-                    .addComponent(Boton24)
-                    .addComponent(Boton35)
-                    .addComponent(Boton46))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton3)
-                    .addComponent(Boton14)
-                    .addComponent(Boton25)
-                    .addComponent(Boton47)
-                    .addComponent(Boton36))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton4)
-                    .addComponent(Boton15)
-                    .addComponent(Boton26)
-                    .addComponent(Boton48)
-                    .addComponent(Boton37))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton5)
-                    .addComponent(Boton16)
-                    .addComponent(Boton27)
-                    .addComponent(Boton49)
-                    .addComponent(Boton38))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton6)
-                    .addComponent(Boton17)
-                    .addComponent(Boton28)
-                    .addComponent(Boton39))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton7)
-                    .addComponent(Boton18)
-                    .addComponent(Boton29)
-                    .addComponent(Boton40))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton8)
-                    .addComponent(Boton19)
-                    .addComponent(Boton30)
-                    .addComponent(Boton41))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton9)
-                    .addComponent(Boton20)
-                    .addComponent(Boton31)
-                    .addComponent(Boton42))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton10)
-                    .addComponent(Boton21)
-                    .addComponent(Boton32)
-                    .addComponent(Boton43))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Boton11)
-                    .addComponent(Boton22)
-                    .addComponent(Boton33)
-                    .addComponent(Boton44))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotonJugador)
-                    .addComponent(Suerte))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotonMaquina)
-                .addContainerGap())
+                .addGap(22, 22, 22)
+                .addComponent(Suerte)
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 309, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,103 +121,50 @@ public class ventanaBonoloto extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void SuerteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuerteActionPerformed
+        
+        int num1, num2, num3, num4, num5, num6;
+
+        num1=Integer.parseInt(JOptionPane.showInputDialog("numero 1"));
+        num2=Integer.parseInt(JOptionPane.showInputDialog("numero 2"));
+        num3=Integer.parseInt(JOptionPane.showInputDialog("numero 3"));
+        num4=Integer.parseInt(JOptionPane.showInputDialog("numero 4"));
+        num5=Integer.parseInt(JOptionPane.showInputDialog("numero 5"));
+        num6=Integer.parseInt(JOptionPane.showInputDialog("numero 6"));
+
+        ArrayList numeroJ = new ArrayList<>();
+        numeroJ.add(num1);
+        numeroJ.add(num2);
+        numeroJ.add(num3);
+        numeroJ.add(num4);
+        numeroJ.add(num5);
+        numeroJ.add(num6);
+
+        NumeroJugador.setText("[" + num1 + " ,"+ num2 + " ," + num3 + " ," + num4 + " ," + num5 + " ," + num6+"]");
+    int numM;
+    ArrayList numerosM = new ArrayList<>();
+        for(int i=0;i<=5;i++){
+            numM = (int) (Math.random()*49+1);
+
+            if (numerosM.contains(numM)){
+                i--;
+            }else{
+                numerosM.add(numM);
+            }
+            for (Object n : numerosM) {
+                NumeroMaquina.setText("" + numerosM);
+            }
+        }
+        
+    }//GEN-LAST:event_SuerteActionPerformed
+
     private void NumeroJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NumeroJugadorActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_NumeroJugadorActionPerformed
 
-    private void Boton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton1ActionPerformed
-        if(evt.getSource()==Boton1){
-            NumeroJugador.setText("1");
-        }
-    }//GEN-LAST:event_Boton1ActionPerformed
 
 
-    private void Boton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton2ActionPerformed
-       if(evt.getSource()==Boton2){
-            NumeroJugador.setText("2");
-       
-    }//GEN-LAST:event_Boton2ActionPerformed
 
-
-}
-    private void Boton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton3ActionPerformed
-        if(evt.getSource()==Boton3){
-            NumeroJugador.setText("3");
-        }
-    }//GEN-LAST:event_Boton3ActionPerformed
-
-    private void Boton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton4ActionPerformed
-       if(evt.getSource()==Boton4){
-            NumeroJugador.setText("4");
-       }
-    }//GEN-LAST:event_Boton4ActionPerformed
-
-    private void Boton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton5ActionPerformed
-        if(evt.getSource()==Boton5){
-            NumeroJugador.setText("5");
-        }
-    }//GEN-LAST:event_Boton5ActionPerformed
-
-    private void Boton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton6ActionPerformed
-       if(evt.getSource()==Boton6){
-            NumeroJugador.setText("6");
-       }
-    }//GEN-LAST:event_Boton6ActionPerformed
-
-    private void Boton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton7ActionPerformed
-       if(evt.getSource()==Boton7){
-            NumeroJugador.setText("7");
-       }
-    }//GEN-LAST:event_Boton7ActionPerformed
-
-    private void Boton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton8ActionPerformed
-        if(evt.getSource()==Boton8){
-            NumeroJugador.setText("8");
-        }
-    }//GEN-LAST:event_Boton8ActionPerformed
-
-    private void Boton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton9ActionPerformed
-       if(evt.getSource()==Boton9){
-            NumeroJugador.setText("9");
-       }
-    }//GEN-LAST:event_Boton9ActionPerformed
-
-    private void Boton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton10ActionPerformed
-       if(evt.getSource()==Boton10){
-            NumeroJugador.setText("10");
-       }
-    }//GEN-LAST:event_Boton10ActionPerformed
-
-    private void Boton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton11ActionPerformed
-        if(evt.getSource()==Boton11){
-            NumeroJugador.setText("11");
-        }
-    }//GEN-LAST:event_Boton11ActionPerformed
-
-    private void BotonMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMaquinaActionPerformed
-       int numM;
-       
-       ArrayList numerosM = new ArrayList<>();
-       for(int i=0;i<=5;i++){
-           numM = (int) (Math.random()*49+1);
-           
-           if (numerosM.contains(numM)){
-               i--;
-           }else{
-               numerosM.add(numM);
-           }
-           for (Object n : numerosM) {
-    NumeroMaquina.setText("" + numerosM);
-       }
-             } 
-    }//GEN-LAST:event_BotonMaquinaActionPerformed
-
-    private void BotonJugadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonJugadorActionPerformed
-        if(evt.getSource()==BotonJugador){
-            ArrayList numerosJ = new ArrayList<>();
-            NumeroJugador.getText();
-        }
-    }//GEN-LAST:event_BotonJugadorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -597,61 +199,10 @@ public class ventanaBonoloto extends javax.swing.JFrame {
                 new ventanaBonoloto().setVisible(true);
             }
         });
+    
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Aciertos;
-    private javax.swing.JButton Boton1;
-    private javax.swing.JButton Boton10;
-    private javax.swing.JButton Boton11;
-    private javax.swing.JButton Boton12;
-    private javax.swing.JButton Boton13;
-    private javax.swing.JButton Boton14;
-    private javax.swing.JButton Boton15;
-    private javax.swing.JButton Boton16;
-    private javax.swing.JButton Boton17;
-    private javax.swing.JButton Boton18;
-    private javax.swing.JButton Boton19;
-    private javax.swing.JButton Boton2;
-    private javax.swing.JButton Boton20;
-    private javax.swing.JButton Boton21;
-    private javax.swing.JButton Boton22;
-    private javax.swing.JButton Boton23;
-    private javax.swing.JButton Boton24;
-    private javax.swing.JButton Boton25;
-    private javax.swing.JButton Boton26;
-    private javax.swing.JButton Boton27;
-    private javax.swing.JButton Boton28;
-    private javax.swing.JButton Boton29;
-    private javax.swing.JButton Boton3;
-    private javax.swing.JButton Boton30;
-    private javax.swing.JButton Boton31;
-    private javax.swing.JButton Boton32;
-    private javax.swing.JButton Boton33;
-    private javax.swing.JButton Boton34;
-    private javax.swing.JButton Boton35;
-    private javax.swing.JButton Boton36;
-    private javax.swing.JButton Boton37;
-    private javax.swing.JButton Boton38;
-    private javax.swing.JButton Boton39;
-    private javax.swing.JButton Boton4;
-    private javax.swing.JButton Boton40;
-    private javax.swing.JButton Boton41;
-    private javax.swing.JButton Boton42;
-    private javax.swing.JButton Boton43;
-    private javax.swing.JButton Boton44;
-    private javax.swing.JButton Boton45;
-    private javax.swing.JButton Boton46;
-    private javax.swing.JButton Boton47;
-    private javax.swing.JButton Boton48;
-    private javax.swing.JButton Boton49;
-    private javax.swing.JButton Boton5;
-    private javax.swing.JButton Boton6;
-    private javax.swing.JButton Boton7;
-    private javax.swing.JButton Boton8;
-    private javax.swing.JButton Boton9;
-    private javax.swing.JButton BotonJugador;
-    private javax.swing.JButton BotonMaquina;
     private javax.swing.JTextField NumeroJugador;
     private javax.swing.JTextField NumeroMaquina;
     private javax.swing.JButton Suerte;
@@ -661,3 +212,4 @@ public class ventanaBonoloto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
+
